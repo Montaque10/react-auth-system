@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.page-enter,
+.page-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+#root > div {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+
+body > #root > div > main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+
+.MuiContainer-root {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiBox-root {
+  width: 100%; 
+  max-width: 444px; 
+}
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
